@@ -1,6 +1,8 @@
 package lesson3.hw;
 
-public abstract class Employee {
+import java.util.Comparator;
+
+public abstract class Employee implements Comparable<Employee>, Iterable<Employee> {
     int id;
     String name;
     String surname;
@@ -14,4 +16,14 @@ public abstract class Employee {
     }
 
     public abstract double calculateSalary();
+
+    @Override
+    public String toString() {
+        return "Employee{" +
+                "id=" + id +
+                ", name='" + name + '\'' +
+                ", surname='" + surname + '\'' +
+                ", age=" + age +
+                '}';
+    }
 }
