@@ -11,24 +11,28 @@ public class Program {
         Employee employee4 = new Freelancer(2, "Jhon", "Elton", 28, 15);
 
         employeeList.add(employee1);
-        //System.out.println(employee1.calculateSalary());
         employeeList.add(employee2);
-        //System.out.println(employee2.calculateSalary());
         employeeList.add(employee3);
-        //System.out.println(employee3.calculateSalary());
         employeeList.add(employee4);
-        //System.out.println(employee4.calculateSalary());*/
 
-        //System.out.println(employeeList);
         for (Employee employee : employeeList) {
             System.out.println(employee.calculateSalary());
         }
+
+        for (Employee employee : employeeList) {
+            System.out.println(employee);
+        }
+
         Collections.sort(employeeList);
 
         System.out.println();
 
         for (Employee employee : employeeList) {
             System.out.println(employee.calculateSalary());
+        }
+
+        for (Employee employee : employeeList) {
+            System.out.println(employee);
         }
     }
 }
